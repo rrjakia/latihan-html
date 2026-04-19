@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube - Windah Basudara Edition</title>
+  <link rel="stylesheet" href="lesson17yt.css">
+</head>
+<body>
+  <nav class="header">
+    <div class="header-left">
+      <img class="menu-icon" src="https://cdn-icons-png.flaticon.com/512/8182/8182885.png">
+      <img class="yt-logo" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg">
+    </div>
+    <div class="header-middle">
+      <input id="search-input" class="search-bar" type="text" placeholder="Telusuri">
+      <button class="search-btn" onclick="searchYoutube()">
+        <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" class="icon-img">
+      </button>
+    </div>
+    <div class="header-right">
+      <img class="action-icon" src="https://cdn-icons-png.flaticon.com/512/1082/1082531.png">
+      <img class="action-icon" src="https://cdn-icons-png.flaticon.com/512/3602/3602145.png">
+      <img class="user-pic" src="https://i.pinimg.com/736x/a9/f8/bb/a9f8bbc02ed1bcc9b9a3f6c20d9b2eab.jpg">
+    </div>
+  </nav>
+
+  <main class="video-grid">
+    <div class="video-card">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/live/nUFVVu8qVw8">
+          <img class="thumbnail" src="https://i.ytimg.com/vi/nUFVVu8qVw8/maxresdefault.jpg">
+        </a>
+        <div class="video-time">37:11</div>
+      </div>
+      <div class="video-info">
+        <img class="channel-pic" src="https://i.pinimg.com/736x/5d/9c/f3/5d9cf3aa1d5fceb24886f1ec6f0be116.jpg">
+        <div class="text-info">
+          <p class="video-title">POHON BENCI KAMU....</p>
+          <p class="video-stats">Windah Basudara</p>
+          <p class="video-stats">919rb x ditonton · 3 hari yang lalu</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/live/IjYSFMZ14mE">
+          <img class="thumbnail" src="https://i.ytimg.com/vi/IjYSFMZ14mE/maxresdefault.jpg">
+        </a>
+        <div class="video-time">12:26</div>
+      </div>
+      <div class="video-info">
+        <img class="channel-pic" src="https://i.pinimg.com/736x/5d/9c/f3/5d9cf3aa1d5fceb24886f1ec6f0be116.jpg">
+        <div class="text-info">
+          <p class="video-title">AKU MENCOBA GAME TENTANG TEMBOK YANG VIRAL DI SUATU TEMPAT....</p>
+          <p class="video-stats">Windah Basudara</p>
+          <p class="video-stats">697rb x ditonton · 1 bulan yang lalu</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const searchInput = document.getElementById('search-input');
+    
+    function searchYoutube() {
+      const query = searchInput.value;
+      if (query) {
+        window.location.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
+      }
+    }
+
+    searchInput.addEventListener('keypress', function (e) {
+      if (e.key === 'Enter') {
+        searchYoutube();
+      }
+    });
+  </script>
+</body>
+</html>

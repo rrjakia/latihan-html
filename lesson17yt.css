@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  padding-top: 70px;
+}
+
+.header {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 16px;
+  z-index: 100;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  width: 24px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.yt-logo {
+  height: 20px;
+  cursor: pointer;
+}
+
+.header-middle {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  margin: 0 40px;
+}
+
+.search-bar {
+  flex: 1;
+  height: 40px;
+  padding-left: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 40px 0 0 40px;
+  outline: none;
+}
+
+.search-btn {
+  width: 64px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 40px 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-img {
+  width: 18px;
+  opacity: 0.6;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.action-icon {
+  width: 24px;
+  cursor: pointer;
+}
+
+.user-pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.thumbnail-row {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 12px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.video-time {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.video-info {
+  display: flex;
+  gap: 12px;
+}
+
+.channel-pic {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.video-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 4px;
+  color: #0f0f0f;
+  max-height: 40px;
+  overflow: hidden;
+  display: block;
+}
+
+.video-stats {
+  font-size: 12px;
+  color: #606060;
+}

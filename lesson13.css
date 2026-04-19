@@ -1,0 +1,92 @@
+     body { 
+      font-family: Arial, Helvetica, sans-serif; 
+      padding: 20px; 
+      padding-bottom: 100px;
+    }
+    
+    .lesson-title { 
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .section-divider { 
+      border-bottom: 1px solid #ddd; 
+      margin: 20px 0;
+    }
+
+    .black-label {
+      background-color: black;
+      color: white;
+      padding: 1px 4px; 
+      font-size: 13px;
+    }
+
+    .container-13 { 
+      display: flex; 
+      margin-bottom: 10px; 
+      background-color: white; 
+      width: fit-content; 
+      padding: 5px; 
+    }
+    .pink-box { 
+      background-color: lightpink; 
+      width: 100px; 
+      height: 50px; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+    }
+    .blue-box { 
+      background-color: lightblue; 
+      width: 200px; 
+      height: 50px; 
+    }
+    .blue-box-nested { 
+      display: flex; 
+      flex-direction: column; 
+      justify-content: space-between; 
+      padding: 5px; 
+      box-sizing: border-box;
+    }
+    .row-between { display: flex; justify-content: space-between; width: 100%; }
+
+    .gmail-container {
+      background-color: white;
+      width: 400px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .email-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .avatar-img { width: 45px; height: 45px; border-radius: 50%; margin-right: 12px; object-fit: cover; }
+    .email-content { flex: 1; display: flex; flex-direction: column; }
+    .email-header { display: flex; justify-content: space-between; align-items: center; }
+    .sender-name { font-weight: bold; font-size: 14px; }
+    .email-time { color: gray; font-size: 12px; }
+    .email-subject { font-weight: bold; font-size: 14px; margin: 2px 0; }
+    .email-preview { color: gray; font-size: 13px; margin: 0; }
+
+    .twitter-post {
+      background-color: white;
+      width: 500px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      display: flex;
+    }
+    .link-card { 
+      border: 1px solid #ddd; 
+      border-radius: 15px; 
+      display: flex; 
+      overflow: hidden; 
+      margin-top: 10px; 
+    }
+    .link-thumb { width: 100px; background-color: #ccc; }
+    .link-info { padding: 10px; flex: 1; }

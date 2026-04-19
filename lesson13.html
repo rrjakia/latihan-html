@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 13 - Nested Flexbox</title>
+ <link rel="stylesheet" href="lesson13.css">
+</head>
+<body>
+
+  <div class="lesson-title">LESSON 13</div>
+  <div class="section-divider"></div>
+
+  <p>13a.</p>
+  <div class="container-13">
+    <div class="pink-box"><div class="black-label">item1</div></div>
+    <div class="blue-box"></div>
+  </div>
+
+  <p>13b.</p>
+  <div class="container-13">
+    <div class="pink-box"></div>
+    <div class="blue-box blue-box-nested">
+      <div><span class="black-label">row1</span></div>
+      <div class="row-between">
+        <span class="black-label">row2</span>
+        <span class="black-label">row2</span>
+      </div>
+    </div>
+  </div>
+
+  <p>13c, 13d, 13e.</p>
+  <div class="gmail-container">
+    <p style="color: gray; font-size: 11px; margin-bottom: 15px;">ALL INBOXES</p>
+    
+    <div class="email-item">
+      <img class="avatar-img" src="https://i.pinimg.com/736x/59/64/bb/5964bb53446a7be28280fe7c88ffce9f.jpg">
+      <div class="email-content">
+        <div class="email-header"><span class="sender-name">Chewy Promotions</span><span class="email-time">4:58 PM</span></div>
+        <p class="email-subject">Biggest sales of the year!</p>
+        <p class="email-preview">Hey there! We're writing to tell you about our...</p>
+      </div>
+    </div>
+
+    <div class="email-item">
+      <img class="avatar-img" src="https://i.pinimg.com/1200x/13/6c/e9/136ce984db3e4cdbcd6e2a20f2fe92b2.jpg">
+      <div class="email-content">
+        <div class="email-header"><span class="sender-name">Best Buy</span><span class="email-time">12:32 PM</span></div>
+        <p class="email-subject">Your Best Buy eReceipt</p>
+        <p class="email-preview">Thank you for shopping at Best Buy, here is...</p>
+      </div>
+    </div>
+
+    <div class="email-item" style="border-bottom: none; margin-bottom: 0;">
+      <img class="avatar-img" src="https://i.pinimg.com/736x/fe/65/f1/fe65f118eacadaefba41d4ccecf45657.jpg">
+      <div class="email-content">
+        <div class="email-header"><span class="sender-name">Netflix</span><span class="email-time">9:00 AM</span></div>
+        <p class="email-subject">Here's what's coming soon to Netflix</p>
+        <p class="email-preview">Brand new movies and shows, old favorites...</p>
+      </div>
+    </div>
+  </div>
+
+  <p>13f, 13g.</p>
+  <div class="twitter-post">
+    <img class="avatar-img" src="https://i.pinimg.com/736x/59/64/bb/5964bb53446a7be28280fe7c88ffce9f.jpg">
+    <div class="email-content">
+      <div style="display: flex; gap: 5px;"><span class="sender-name">supersimple.dev</span><span style="color: gray;">@SuperSimpleDev</span></div>
+      <p style="margin: 5px 0 10px 0; line-height: 1.4;">What is backend web development? A complete overview. New video is up!</p>
+      <div class="link-card">
+        <div class="link-thumb"></div>
+        <div class="link-info">
+          <p style="color: gray; font-size: 13px; margin: 0;">youtube.com</p>
+          <p style="font-weight: bold; font-size: 14px; margin: 4px 0 0 0;">Backend web development - a complete overview (2021)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

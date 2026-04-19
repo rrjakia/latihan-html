@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 14 Full - Position Fixed</title>
+  <link rel="stylesheet" href="lesson14.css">
+</head>
+<body>
+
+  <div class="fb-header">
+    <div class="fb-left">
+      <img class="fb-avatar" src="https://i.pinimg.com/736x/59/64/bb/5964bb53446a7be28280fe7c88ffce9f.jpg">
+      <span style="font-weight: bold;">Oliver Cat</span>
+    </div>
+    <div class="fb-btns">
+      <button class="btn-blue">Add Friend</button>
+      <button class="btn-gray">Message</button>
+    </div>
+  </div>
+
+  <div class="discord-sidebar">
+    <img class="discord-avatar" src="https://i.pinimg.com/736x/59/64/bb/5964bb53446a7be28280fe7c88ffce9f.jpg">
+    <img class="discord-avatar" src="https://i.pinimg.com/1200x/13/6c/e9/136ce984db3e4cdbcd6e2a20f2fe92b2.jpg">
+    <img class="discord-avatar" src="https://i.pinimg.com/736x/fe/65/f1/fe65f118eacadaefba41d4ccecf45657.jpg">
+  </div>
+  <div class="discord-channels">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+      <span style="font-weight: bold; font-size: 12px;">INFO</span>
+      <span>+</span>
+    </div>
+    <div style="font-size: 14px; line-height: 2;">
+      # new-videos <br>
+      # updates <br>
+      # faq
+    </div>
+  </div>
+
+  <div class="right-sidebar">right sidebar</div>
+
+  <div class="bottom-right-label">bottom-right</div>
+
+  <div class="content-area">
+    <h1>Lesson 14</h1>
+    <button onclick="document.getElementById('modalBox').style.display='flex'">Buka Modal (14d)</button>
+  </div>
+
+  <div class="modal-overlay" id="modalBox">
+    <div class="modal">
+      <h2>Modal Title</h2>
+      <p>This is a modal</p>
+      <button class="close-btn" onclick="document.getElementById('modalBox').style.display='none'">Close</button>
+    </div>
+  </div>
+
+</body>
+</html>

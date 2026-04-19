@@ -1,0 +1,88 @@
+    body { 
+      font-family: Arial; 
+      height: 3000px; 
+      margin: 0;
+      padding-top: 60px;
+      background-color: #f0f2f5;
+    }
+
+    .fb-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 50px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+    .fb-left { display: flex; align-items: center; gap: 10px; }
+    .fb-avatar { width: 35px; height: 35px; border-radius: 50%; object-fit: cover; }
+    .fb-btns { display: flex; gap: 8px; }
+    .btn-blue { background-color: #1877f2; color: white; border: none; padding: 6px 12px; border-radius: 6px; font-weight: bold; }
+    .btn-gray { background-color: #e4e6eb; color: black; border: none; padding: 6px 12px; border-radius: 6px; font-weight: bold; }
+
+    .discord-sidebar {
+      position: fixed;
+      left: 0; top: 50px; bottom: 0;
+      width: 70px;
+      background-color: #212326;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 15px;
+      gap: 12px;
+    }
+    .discord-avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; cursor: pointer; }
+    
+    .discord-channels {
+      position: fixed;
+      left: 70px; top: 50px; bottom: 0;
+      width: 150px;
+      background-color: #2f3136;
+      color: #8e9297;
+      padding: 15px;
+    }
+
+    .right-sidebar {
+      position: fixed;
+      right: 0; top: 50px; bottom: 0;
+      width: 100px;
+      background-color: #2d7d32;
+      color: white;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    .bottom-right-label {
+      position: fixed;
+      bottom: 20px;
+      right: 120px;
+      background-color: black;
+      color: white;
+      padding: 8px 12px;
+      font-size: 13px;
+    }
+
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 500; 
+      display: none; 
+    }
+    .modal {
+      background-color: white;
+      padding: 25px;
+      border-radius: 8px;
+      width: 350px;
+    }
+    .modal h2 { margin-top: 0; font-size: 22px; }
+    .close-btn { padding: 8px 16px; cursor: pointer; }
+
+    .content-area { margin-left: 240px; padding: 20px; }
